@@ -19,9 +19,17 @@ app.use(cookieParser());
 import userRoutes from "./routes/user.routes.js";
 import todoRoutes from "./routes/todo.routes.js";
 import transactionRoutes from "./routes/transaction.routes.js";
+import eventRoutes from "./routes/event.routes.js";
+import goalRoutes from "./routes/goal.routes.js";
+import reminderRoutes from "./routes/reminder.routes.js";
+import shoppingRoutes from "./routes/shopping.routes.js";
 
 app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/todos", todoRoutes);
 app.use("/api/v1/transactions", transactionRoutes);
+app.use("/api/v1/events", eventRoutes);
+app.use("/api/v1/goals", goalRoutes);
+app.use("/api/v1/reminders", reminderRoutes);
+app.use("/api/v1/shopping", shoppingRoutes);
 
 export { app };
